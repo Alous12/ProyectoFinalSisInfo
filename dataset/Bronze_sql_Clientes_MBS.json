@@ -1,0 +1,45 @@
+{
+	"name": "Bronze_sql_Clientes_MBS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "slq_dw_mountain_bike_store",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "BRONZE"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "cst_id",
+				"type": "varchar"
+			},
+			{
+				"name": "cst_key",
+				"type": "varchar"
+			},
+			{
+				"name": "cst_firstname",
+				"type": "varchar"
+			},
+			{
+				"name": "cst_lastname",
+				"type": "varchar"
+			},
+			{
+				"name": "cst_marital_status",
+				"type": "varchar"
+			},
+			{
+				"name": "cst_gndr",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "BRONZE",
+			"table": "CLIENTES"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,29 @@
+{
+	"name": "Bronze_sql_Clientes_Location_MBS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "slq_dw_mountain_bike_store",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "BRONZE"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "CID",
+				"type": "varchar"
+			},
+			{
+				"name": "CNTRY",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "BRONZE",
+			"table": "CLIENTES_LOC"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
